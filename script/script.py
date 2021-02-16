@@ -15,7 +15,7 @@ rodada = int(rod.text.split()[0].replace('ª',''))
 botaoesq = tabela.find_element_by_class_name('arrow-wrapper--prev')
 botaodir = tabela.find_element_by_class_name('arrow-wrapper--next')
 
-Clear = lambda a: times.clear()
+Clear = lambda a: a.clear()
 
 for i in range(rodada):
     try:
