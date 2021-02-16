@@ -15,7 +15,7 @@ rodada = int(rod.text.split()[0].replace('ª',''))
 botaoesq = tabela.find_element_by_class_name('arrow-wrapper--prev')
 botaodir = tabela.find_element_by_class_name('arrow-wrapper--next')
 
-teste = lambda a: times.clear()
+Clear = lambda a: times.clear()
 
 for i in range(rodada):
     try:
@@ -36,9 +36,8 @@ tt2 = []
 
 for j in range(rodada):
     for i in range(5):
-        confrontos = main.find_element_by_class_name('table--schedule')
-        div0 = confrontos.find_element_by_class_name('carousel__content')
-        ul = div0.find_element_by_class_name('carousel__content-list')
+        cc = tabela.find_element_by_class_name('carousel__content')
+        ul = cc.find_element_by_class_name('carousel__content-list')
         lis = ul.find_elements_by_tag_name('li')
         jogo = lis[i].find_element_by_tag_name('div')
         placar = jogo.find_element_by_class_name('game-placcard')
@@ -48,7 +47,7 @@ for j in range(rodada):
         resultados = placar.find_element_by_class_name('game-placcard__result')
         resultadot1 = resultados.find_element_by_class_name('game-placcard__result--team-a')
         resultadot2 = resultados.find_element_by_class_name('game-placcard__result--team-b')
-        teste(times)
+        Clear(times)
         t1.append(time1.text)
         t2.append(time2.text)
         r1.append(resultadot1.text)
@@ -60,9 +59,8 @@ for j in range(rodada):
 
 for j in range(18-rodada):
     for i in range(5):
-        confrontos = main.find_element_by_class_name('table--schedule')
-        div0 = confrontos.find_element_by_class_name('carousel__content')
-        ul = div0.find_element_by_class_name('carousel__content-list')
+        cc = tabela.find_element_by_class_name('carousel__content')
+        ul = cc.find_element_by_class_name('carousel__content-list')
         lis = ul.find_elements_by_tag_name('li')
         jogo = lis[i].find_element_by_tag_name('div')
         placar = jogo.find_element_by_class_name('game-placcard')
@@ -72,7 +70,7 @@ for j in range(18-rodada):
         resultados = placar.find_element_by_class_name('game-placcard__result')
         resultadot1 = resultados.find_element_by_class_name('game-placcard__result--team-a')
         resultadot2 = resultados.find_element_by_class_name('game-placcard__result--team-b')
-        teste(times)
+        Clear(times)
         tt1.append(time1.text)
         tt2.append(time2.text)
         rr1.append(resultadot1.text)
@@ -95,10 +93,10 @@ bdd = bdd.transpose()
 jf = np.array([tt1,rr1,rr2,tt2])
 jf = jf.transpose()
 
-teste = pd.DataFrame(bdd,columns = ["Home","X","Y","Visitor"])
-teste2 = pd.DataFrame(jf,columns = ["Home","X","Y","Visitor"])
+dfbdd= pd.DataFrame(bdd,columns = ["Home","X","Y","Visitor"])
+dfjf = pd.DataFrame(jf,columns = ["Home","X","Y","Visitor"])
 
-print(teste)
-print(teste2)
+print(dfbdd)
+print(dfjf)
 
 browser.quit()
