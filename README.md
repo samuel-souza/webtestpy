@@ -1,2 +1,2 @@
-# webtest
-a test for webscraping in python language  
+# web scraping with python
+a simple test with python using selenium for automation of web scraping, in this case the web scraping was performed on GloboEsporte web site in modality of esports, more expecifically about the CBLOL 2021. This is a brazilian championship of the game named League of Legends, this championship occurs two times for year, the target of this script its the first fase. With the script available its possible to use to get results of the matches returning a Pandas DataFrame for further analysis.
