@@ -831,3 +831,32 @@ JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 716: Error: Pha
 
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1616422881778	geckodriver	INFO	Listening on 127.0.0.1:62231
+1616422884816	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ojuar\\AppData\\Local\\Temp\\rust_mozprofile0McMuD"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616422890479	Marionette	INFO	Listening on port 62241
+1616422890620	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616422890640	Marionette	ERROR	[15] No reply from Marionette:Register
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616422902863	Marionette	INFO	Stopped listening on port 62241
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616422951406	geckodriver	INFO	Listening on 127.0.0.1:62449
+1616422954596	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ojuar\\AppData\\Local\\Temp\\rust_mozprofileOxpfWa"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616422959061	Marionette	INFO	Listening on port 62462
+1616422959421	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616422959446	Marionette	ERROR	[15] No reply from Marionette:Register
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616422994995	Marionette	INFO	Stopped listening on port 62462
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 716: Error: Phase "Sqlite.jsm: wait until all connections are closed" is finished, it is too late to register completion condition "protections.sqlite#0: waiting for shutdown"
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

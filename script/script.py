@@ -102,6 +102,5 @@ if rodada < 18:
 bdd = np.array([t1,r1,r2,t2])
 bdd = bdd.transpose()
 dfbdd = pd.DataFrame(bdd,columns = ["Home","X","Y","Visitor"])
-print(dfbdd)
 dfbdd.to_csv('bdd.csv',sep=str(','),index = False)
 browser.quit()
