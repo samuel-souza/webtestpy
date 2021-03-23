@@ -38,5 +38,3 @@ Py_to_R = function (directory) {
 }
 
 
-Py_to_R('C:/Users/ojuar/UEPB/ScriptsR/GitHub/webtest/script/script.py')
-
